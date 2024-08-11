@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A simple group chat application built using React and Socket.IO, allowing users to sign in, send and receive messages in real-time, with a focus on responsiveness and clean code standards.
+A simple group chat application built using React and Socket.IO, allowing users to sign in and send/receive messages in real-time.
 
 ## Features
 
@@ -10,7 +10,6 @@ A simple group chat application built using React and Socket.IO, allowing users 
 - **Real-Time Messaging:** Messages are sent and received in real-time.
 - **Error Handling:** Notifies users if a message fails to send.
 - **Responsive Design:** Optimized for both desktop and mobile views.
-- **Sign Out Functionality:** Users can sign out and remove their data from local storage.
 
 ## Technologies Used
 
@@ -23,7 +22,7 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
 ### Prerequisites
 
-- Node.js (v14 or above)
+- Node.js
 - npm
 
 ### Installation
@@ -33,53 +32,37 @@ A simple group chat application built using React and Socket.IO, allowing users 
    ```bash
    git clone https://github.com/SoroushKeyana/Group-Chat.git
 
-2. Navigate to the project directory:
+2. Navigate to the project directory and install the dependencies for both frontend and backend:
 
+-**Frontend**
     ```bash
-    cd <repository-directory>
-
-3. Install the dependencies:
-
-    ```bash
+    cd frontend
     npm install
 
-## Running the Application
-You can start both the frontend and backend servers from the root directory or start them individually.
-
-### Starting Both Servers from the Root Directory
-
+-**Backend**
     ```bash
-    npm start
+    cd backend
+    npm install
 
-    This command will concurrently start:
 
-    - **Backend Server: Runs on http://localhost:3001**
-    - **Frontend Server: Runs on http://localhost:3000**
-
-### Starting Servers Individually
+## Running the Application
+Start the frontend and backend servers separately.
 
 1. Backend Server:
 
-    Navigate to the backend directory and run:
+    Navigate to the backend directory and run `npm start`:
 
     ```bash
     cd backend
     npm start
 
+- **Backend Server: Runs on http://localhost:3001**
+
 2. Frontend Server: 
-    Navigate to the frontend directory and run:
+    Navigate to the frontend directory and run `npm start`:
 
     ```bash
     cd frontend
     npm start
 
-## Project Structure
-
-├── backend          # Backend code (Express, Socket.IO)
-├── frontend         # Frontend code (React, Vite)
-├── package.json     # Root package.json for concurrent running
-├── README.md        # Project documentation
-└── .gitignore       # Files to ignore in version control
-
-
-
+- **Frontend Server: Runs on http://localhost:5173**
