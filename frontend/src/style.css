@@ -1,0 +1,247 @@
+body {
+  background-color: #e9e9eb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sign-in page */
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #e9e9eb;
+  margin: 30px;
+}
+
+.name-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.name-input-wrapper input {
+  width: 100%;
+  padding: 7px 50px 7px 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.name-input-wrapper button {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.name-input-wrapper button:disabled {
+  background-color: #6a6a6a;
+}
+
+.name-input-wrapper button:not(:disabled):hover {
+  background-color: #0058ff;
+}
+
+/* Chat page */
+.chat-container {
+  width: 100%;
+  max-width: 900px;
+  height: 100vh;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-input-container {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.message-input-container textarea {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  padding: 15px 15px 0px 15px;
+  max-height: '100px';
+  overflow-y: 'hidden';
+  resize: 'none';
+}
+
+.message-input-container button {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.message-input-container button:disabled {
+  background-color: #6a6a6a;
+}
+
+.message-input-container button:not(:disabled):hover {
+  background-color: #0058ff;
+}
+
+/* Message */
+.message {
+  max-width: 250px;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.previous-message {
+  margin-bottom: 0px;
+}
+
+/* Sent Messages */
+.message-sent {
+  background-color: #36a4fb;
+  color: white;
+}
+
+.last-message-sent::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -7px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #36a4fb;
+  border-right: 15px solid transparent;
+  border-left: 10px solid transparent;
+  rotate: 70deg;
+}
+
+/* Received Messages */
+.message-received {
+  background-color: #e9e9eb;
+}
+
+.last-message-received::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #e9e9eb;
+  border-left: 15px solid transparent;
+  border-right: 10px solid transparent;
+  rotate: -70deg;
+}
+
+/* Message Container */
+.message-sent-container,
+.message-received-container {
+  align-self: flex-end;
+}
+
+.message-received-container {
+  align-self: flex-start;
+}
+
+/* Name Display */
+.sender-name,
+.receiver-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.sender-name {
+  text-align: right;
+  margin: 0px 10px -8px 0px;
+}
+
+.receiver-name {
+  text-align: left;
+  margin: 0px 0px -8px 10px;
+}
+
+/* Sign Out Button */
+.sign-out {
+  background-color: #7393b3;
+  color: white;
+  border: none;
+  font-size: 25px;
+}
+
+.sign-out:hover {
+  background-color: #6f8faf;
+}
+
+.error-notification {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 0px 0 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .message {
+    font-size: 16px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-out {
+    font-size: 20px;
+  }
+
+  .message {
+    font-size: 14px;
+    max-width: 180px;
+  }
+}
