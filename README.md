@@ -66,6 +66,8 @@ Start the frontend and backend servers separately.
 
     ```bash
     cd backend
+    ```
+    ```bash
     npm start
     ```
 
