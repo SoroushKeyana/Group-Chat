@@ -35,11 +35,15 @@ A simple group chat application built using React and Socket.IO, allowing users 
 2. Navigate to the project directory and install the dependencies for both frontend and backend:
 
 -**Frontend**
+
     ```bash
     cd frontend
+    
+    ```bash
     npm install
 
 -**Backend**
+
     ```bash
     cd backend
     npm install
