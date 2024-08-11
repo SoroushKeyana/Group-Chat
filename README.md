@@ -36,33 +36,37 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
     -**Frontend**
 
+    ```bash
     cd frontend
     npm install
+    ```
 
     -**Backend**
 
+    ```bash
     cd backend
     npm install
-
+    ```
 
 ## Running the Application
 Start the frontend and backend servers separately.
 
-1. Backend Server:
+1. Frontend Server: 
+    Navigate to the frontend directory and run `npm start`:
+
+    ```bash
+    cd frontend
+    npm start
+    ```
+    - **Frontend Server: Runs on http://localhost:5173**
+
+2. Backend Server:
 
     Navigate to the backend directory and run `npm start`:
 
     ```bash
     cd backend
     npm start
+    ```
 
     - **Backend Server: Runs on http://localhost:3001**
-
-2. Frontend Server: 
-    Navigate to the frontend directory and run `npm start`:
-
-    ```bash
-    cd frontend
-    npm start
-
-    - **Frontend Server: Runs on http://localhost:5173**
