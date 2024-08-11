@@ -36,15 +36,11 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
 -**Frontend**
 
-    ```bash
     cd frontend
-    
-    ```bash
     npm install
 
 -**Backend**
 
-    ```bash
     cd backend
     npm install
 
