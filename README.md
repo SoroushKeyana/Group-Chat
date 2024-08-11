@@ -33,7 +33,13 @@ A simple group chat application built using React and Socket.IO, allowing users 
    git clone https://github.com/SoroushKeyana/Group-Chat.git
    ```
 
-2. Navigate to the project directory and install the dependencies for both frontend and backend:
+2. Navigate to the project directory:
+
+    ```bash
+    cd Group-Chat
+    ```
+
+3. Install the dependencies for both frontend and backend:
 
 - **Frontend**
 
