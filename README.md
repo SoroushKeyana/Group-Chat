@@ -31,6 +31,7 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
    ```bash
    git clone https://github.com/SoroushKeyana/Group-Chat.git
+   ```
 
 2. Navigate to the project directory and install the dependencies for both frontend and backend:
 
@@ -38,6 +39,8 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
     ```bash
     cd frontend
+    ```
+    ```bash
     npm install
     ```
 
@@ -45,6 +48,8 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
     ```bash
     cd backend
+    ```
+    ```bash
     npm install
     ```
 
@@ -56,6 +61,8 @@ Start the frontend and backend servers separately.
 
     ```bash
     cd frontend
+    ```
+    ```bash
     npm start
     ```
     - **Frontend Server: Runs on http://localhost:5173**
