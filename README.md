@@ -34,12 +34,12 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
 2. Navigate to the project directory and install the dependencies for both frontend and backend:
 
--**Frontend**
+    -**Frontend**
 
     cd frontend
     npm install
 
--**Backend**
+    -**Backend**
 
     cd backend
     npm install
@@ -56,7 +56,7 @@ Start the frontend and backend servers separately.
     cd backend
     npm start
 
-- **Backend Server: Runs on http://localhost:3001**
+    - **Backend Server: Runs on http://localhost:3001**
 
 2. Frontend Server: 
     Navigate to the frontend directory and run `npm start`:
@@ -65,4 +65,4 @@ Start the frontend and backend servers separately.
     cd frontend
     npm start
 
-- **Frontend Server: Runs on http://localhost:5173**
+    - **Frontend Server: Runs on http://localhost:5173**
