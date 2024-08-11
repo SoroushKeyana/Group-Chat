@@ -35,7 +35,7 @@ A simple group chat application built using React and Socket.IO, allowing users 
 
 2. Navigate to the project directory and install the dependencies for both frontend and backend:
 
-    -**Frontend**
+    - **Frontend**
 
     ```bash
     cd frontend
@@ -44,7 +44,7 @@ A simple group chat application built using React and Socket.IO, allowing users 
     npm install
     ```
 
-    -**Backend**
+    - **Backend**
 
     ```bash
     cd backend
